@@ -1,0 +1,10 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: white url('../images/bgimg.png') repeat;
+	margin: 0 auto;
+}
+
+
