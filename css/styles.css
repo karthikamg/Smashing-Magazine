@@ -1,1 +1,89 @@
-@import url(base.css);
+/* line 5, ../resources/scss/styles.scss */
+div .header-ul {
+  height: 85px;
+  list-style-type: none;
+}
+/* line 8, ../resources/scss/styles.scss */
+div .header-ul li {
+  display: inline-block;
+  cursor: pointer;
+  border-right: 0.08em solid rgba(0, 0, 0, 0.05);
+}
+/* line 12, ../resources/scss/styles.scss */
+div .header-ul li:hover {
+  background-color: yellow;
+}
+/* line 15, ../resources/scss/styles.scss */
+div .header-ul li a {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+/* line 24, ../resources/scss/styles.scss */
+.sidebar-sublinks ul {
+  margin-top: 20px;
+}
+/* line 26, ../resources/scss/styles.scss */
+.sidebar-sublinks ul li {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 800px) {
+  /* line 34, ../resources/scss/styles.scss */
+  .logo-ul-size {
+    padding: 15px;
+    background-color: white;
+    float: left;
+  }
+}
+/* line 40, ../resources/scss/styles.scss */
+.social-logos {
+  width: 40%;
+}
+/* line 43, ../resources/scss/styles.scss */
+.social-logos li a {
+  background-image: url("../resources/images/channels.svg");
+  background-size: 353% 600%;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+  /* line 50, ../resources/scss/styles.scss */
+  .sidebar ul {
+    display: table;
+  }
+  /* line 52, ../resources/scss/styles.scss */
+  .sidebar ul li {
+    margin-left: 55px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  /* line 58, ../resources/scss/styles.scss */
+  .sidebar ul {
+    display: table;
+  }
+  /* line 60, ../resources/scss/styles.scss */
+  .sidebar ul li {
+    margin-left: 25px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  /* line 66, ../resources/scss/styles.scss */
+  .sidebar ul {
+    display: table;
+  }
+  /* line 68, ../resources/scss/styles.scss */
+  .sidebar ul li {
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 74, ../resources/scss/styles.scss */
+  .sidebar ul {
+    display: table;
+  }
+  /* line 76, ../resources/scss/styles.scss */
+  .sidebar ul li {
+    display: none;
+  }
+}

@@ -1,0 +1,121 @@
+#header-navlittle{
+	background: url('../resources/images/navilittlebook.png') no-repeat right top;
+}
+.social-icons{
+	width: 15px;
+	height: 15px;
+	margin-top: 60px;
+	margin-left: 5px;
+}
+.main{
+	width: 100%;
+	height: auto;
+	color: black;
+}
+.main-content{
+	background-color: white;
+	width: 65%;
+	height: auto;
+	float:left;
+	padding: 40px 20px;
+}
+
+
+@media screen and (max-width: 1020px){
+	.main-sidebar{
+		visibility: hidden;
+	}
+}
+@media screen and (min-width: 1020px){
+	.main-sidebar{
+	width: 35%;
+	height: auto;
+	float:right;
+}
+}
+
+@media screen and (min-width: 1000px){
+	.sidebar ul li{
+		display: block;
+	}
+	.sidebar-sublinks{
+		display: block;
+		font-size: 17px;
+		color: rgba(0, 0, 0, 0.3);;
+    }
+}
+@media screen and (max-width: 1000px){
+	.sidebar-sublinks{
+		display: none;
+    }
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 500px){
+	.header-ul {
+		width: 250px;
+	}
+	.logo-size{
+	   width: 150px;
+	   height: auto;
+    } 
+    .header-links{
+    	visibility: hidden;
+    }
+     .social-logos{
+     	visibility: hidden;
+     }
+}
+@media screen and (min-width: 500px) and (max-width: 800px){
+	.header-ul {
+		width: 300px;
+	}
+	.logo-size{
+	   width: 250px;
+	   height: auto;
+    } 
+    .header-links{
+    	visibility: hidden;
+    }
+     .social-logos{
+     	visibility: hidden;
+     }
+}
+
+@media screen and (min-width: 800px){
+	.header-ul{
+		width: 60%;
+		float: left;
+	}
+	.logo-size{
+	   width: 150px;
+	   height: 55px;
+    }
+     .social-logos{
+	width: 40%;
+	opacity: .45;
+	float: right;
+}
+@media screen and (min-width: 800px) and (max-width: 810px){
+	 .header-links{
+	width: 45px;
+	padding-top:55px;
+	text-align: center;
+    }
+}
+
+@media screen and (min-width: 810px) and (max-width: 890px){
+	 .header-links{
+	width: 55px;
+	padding-top:55px;
+	text-align: center;
+}
+}
+@media screen and (min-width: 890px){
+	 .header-links{
+	width: 65px;
+	padding-top:67px;
+	text-align: center;
+}
+}
+

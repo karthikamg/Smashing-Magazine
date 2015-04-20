@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: white url('../resources/images/bgimg.png') repeat;
+	border-left: .625em solid transparent;
+}
+ul li{
+		list-style-type: none;
+		display: inline-block;
+}
+header{
+	height: 75px;
+}
+

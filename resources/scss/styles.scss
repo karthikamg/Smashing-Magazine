@@ -1,4 +1,80 @@
-@import 'base.css';
 @import "compass";
 @import '_variables.scss';
 
+div{
+	.header-ul{
+		height: 85px;
+		list-style-type: none;
+		li{
+			display: inline-block;
+			cursor: pointer;
+			border-right: .08em solid rgba(0,0,0,.05);
+			&:hover{
+					background-color: $color-yellow;
+				}
+			a{
+				color: rgba(0,0,0,.3);
+				text-decoration: none;
+			}
+		}
+   }
+}
+
+.sidebar-sublinks{
+	ul{
+		margin-top: 20px;
+		li{
+			margin-top: 10px;
+			font-weight: 400;
+		}
+	}
+}
+
+@media screen and (min-width: 800px){  
+     .logo-ul-size{
+	   padding: 15px;
+	   background-color: $color-white;
+	   float: left;
+    }
+}
+.social-logos{
+	width: 40%;
+	li{
+		a{
+			background-image: url("../resources/images/channels.svg");
+			background-size: 353% 600%;
+		}
+	}
+}
+@media screen and (min-width: 900px) and (max-width: 1000px){
+	.sidebar ul{
+		display: table;
+		 li{
+			margin-left: 55px;
+		}
+	}
+}
+@media screen and (min-width: 500px) and (max-width: 900px){
+	.sidebar ul{
+		display: table;
+		 li{
+			margin-left: 25px;
+		}
+	}
+}
+@media screen and (min-width: 500px) and (max-width: 900px){
+	.sidebar ul{
+		display: table;
+		 li{
+			margin-left: 15px;
+		}
+	}
+}
+@media screen and (max-width: 500px){
+	.sidebar ul{
+		display: table;
+		 li{
+			display: none;
+		}
+	}
+}
