@@ -1,35 +1,67 @@
 /* line 5, ../resources/scss/styles.scss */
-div .header-ul {
+div .main-header {
   height: 85px;
   list-style-type: none;
 }
 /* line 8, ../resources/scss/styles.scss */
-div .header-ul li {
+div .main-header li {
   display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
   cursor: pointer;
   border-right: 0.08em solid rgba(0, 0, 0, 0.05);
 }
-/* line 12, ../resources/scss/styles.scss */
-div .header-ul li:hover {
+/* line 13, ../resources/scss/styles.scss */
+div .main-header li:hover {
   background-color: yellow;
 }
-/* line 15, ../resources/scss/styles.scss */
-div .header-ul li a {
+/* line 16, ../resources/scss/styles.scss */
+div .main-header li a {
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
 }
 
-/* line 24, ../resources/scss/styles.scss */
+/* line 23, ../resources/scss/styles.scss */
+.inline-display {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+
+/* line 27, ../resources/scss/styles.scss */
+.main {
+  width: 100%;
+  height: auto;
+  color: black;
+}
+
+/* line 34, ../resources/scss/styles.scss */
 .sidebar-sublinks ul {
   margin-top: 20px;
 }
-/* line 26, ../resources/scss/styles.scss */
+/* line 36, ../resources/scss/styles.scss */
 .sidebar-sublinks ul li {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 1100px) {
+  /* line 42, ../resources/scss/styles.scss */
+  .main-content {
+    width: 95%;
+    background-color: white;
+    overflow: hidden;
+    height: auto;
+    float: left;
+    padding: 40px 20px;
+    border-radius: 0 20px 0 0;
+  }
+}
 @media screen and (min-width: 1100px) {
-  /* line 34, ../resources/scss/styles.scss */
+  /* line 42, ../resources/scss/styles.scss */
   .main-content {
     background-color: white;
     width: 60%;
@@ -39,167 +71,76 @@ div .header-ul li a {
     border-radius: 0 20px 0 0;
   }
 }
+
 @media screen and (max-width: 1100px) {
-  /* line 46, ../resources/scss/styles.scss */
+  /* line 64, ../resources/scss/styles.scss */
   .sidebar-sublinks {
     display: none;
   }
 
-  /* line 49, ../resources/scss/styles.scss */
+  /* line 67, ../resources/scss/styles.scss */
   .sidebar {
     display: none;
   }
 
-  /* line 52, ../resources/scss/styles.scss */
+  /* line 70, ../resources/scss/styles.scss */
   .search-bar {
     width: 100%;
     height: 35px;
     padding: 1em 2.5%;
   }
-
-  /* line 57, ../resources/scss/styles.scss */
-  .article1 {
-    float: right;
-    margin-top: 25px;
-    width: 100%;
-    font-weight: bold;
-    font-size: 23px;
-    font-family: Georgia,"Times New Roman",Times,serif;
-  }
-  /* line 64, ../resources/scss/styles.scss */
-  .article1 a {
-    text-decoration: none;
-    color: #333;
-  }
-  /* line 69, ../resources/scss/styles.scss */
-  .article1 ul li {
-    display: block;
-    font-size: 20px;
-  }
-  /* line 72, ../resources/scss/styles.scss */
-  .article1 ul li small {
-    color: rgba(0, 0, 0, 0.3);
-    font-weight: normal;
-  }
-  /* line 75, ../resources/scss/styles.scss */
-  .article1 ul li small a {
-    color: #41b7d8;
-    line-height: 3;
-    margin-left: 5px;
-  }
-  /* line 83, ../resources/scss/styles.scss */
-  .article1 p {
-    font-weight: normal;
-    font-size: 20px;
-    text-align: justify;
-    line-height: 1.5;
-  }
-
-  /* line 90, ../resources/scss/styles.scss */
-  .main-content {
-    background-color: white;
-    width: 95%;
-    height: auto;
-    float: left;
-    padding: 40px 20px;
-    border-radius: 0 20px 0 0;
-    overflow: hidden;
-  }
 }
-/* line 101, ../resources/scss/styles.scss */
-.nav-links {
-  display: inline-block;
-}
-
 @media screen and (min-width: 800px) {
-  /* line 106, ../resources/scss/styles.scss */
-  .logo-ul-size {
+  /* line 78, ../resources/scss/styles.scss */
+  .position-logo {
     padding: 15px;
     background-color: white;
     float: left;
   }
 }
-/* line 112, ../resources/scss/styles.scss */
+/* line 84, ../resources/scss/styles.scss */
 .social-logos {
-  width: 40%;
+  width: 50%;
 }
-/* line 115, ../resources/scss/styles.scss */
+/* line 87, ../resources/scss/styles.scss */
 .social-logos li a {
   background-image: url("../resources/images/channels.svg");
   background-size: 353% 600%;
 }
 
 @media screen and (min-width: 1100px) and (max-width: 1200px) {
-  /* line 134, ../resources/scss/styles.scss */
+  /* line 94, ../resources/scss/styles.scss */
   .sidebar ul {
     display: table;
   }
-  /* line 137, ../resources/scss/styles.scss */
+  /* line 97, ../resources/scss/styles.scss */
   .sidebar ul li {
     margin-left: 70px;
   }
-  /* line 139, ../resources/scss/styles.scss */
+  /* line 99, ../resources/scss/styles.scss */
   .sidebar ul li p {
     font-weight: bold;
     font-size: 13px;
     border-bottom: 0.3em solid #B80000;
   }
 
-  /* line 146, ../resources/scss/styles.scss */
+  /* line 106, ../resources/scss/styles.scss */
   .main-content-links {
     border-bottom: 0.3em solid #FF6699;
   }
 
-  /* line 149, ../resources/scss/styles.scss */
+  /* line 109, ../resources/scss/styles.scss */
   .ads-images {
     width: 150px;
     height: auto;
   }
 
-  /* line 153, ../resources/scss/styles.scss */
+  /* line 113, ../resources/scss/styles.scss */
   .sidebar-sublinks, .search-bar {
     display: none;
   }
 
-  /* line 156, ../resources/scss/styles.scss */
-  .article1 {
-    float: right;
-    margin-top: 25px;
-    width: 100%;
-    font-weight: bold;
-    font-size: 23px;
-    font-family: Georgia,"Times New Roman",Times,serif;
-  }
-  /* line 163, ../resources/scss/styles.scss */
-  .article1 a {
-    text-decoration: none;
-    color: #333;
-  }
-  /* line 168, ../resources/scss/styles.scss */
-  .article1 ul li {
-    display: block;
-    font-size: 20px;
-  }
-  /* line 171, ../resources/scss/styles.scss */
-  .article1 ul li small {
-    color: rgba(0, 0, 0, 0.3);
-    font-weight: normal;
-  }
-  /* line 174, ../resources/scss/styles.scss */
-  .article1 ul li small a {
-    color: #41b7d8;
-    line-height: 3;
-    margin-left: 5px;
-  }
-  /* line 182, ../resources/scss/styles.scss */
-  .article1 p {
-    font-weight: normal;
-    font-size: 20px;
-    text-align: justify;
-    line-height: 1.5;
-  }
-
-  /* line 189, ../resources/scss/styles.scss */
+  /* line 116, ../resources/scss/styles.scss */
   .main-sidebar {
     width: 32%;
     height: auto;
@@ -207,45 +148,7 @@ div .header-ul li a {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 198, ../resources/scss/styles.scss */
-  .article1 {
-    float: right;
-    margin-top: 25px;
-    width: 65%;
-    font-weight: bold;
-    font-size: 23px;
-    font-family: Georgia,"Times New Roman",Times,serif;
-  }
-  /* line 205, ../resources/scss/styles.scss */
-  .article1 a {
-    text-decoration: none;
-    color: #333;
-  }
-  /* line 210, ../resources/scss/styles.scss */
-  .article1 ul li {
-    display: block;
-    font-size: 20px;
-  }
-  /* line 213, ../resources/scss/styles.scss */
-  .article1 ul li small {
-    color: rgba(0, 0, 0, 0.3);
-    font-weight: normal;
-  }
-  /* line 216, ../resources/scss/styles.scss */
-  .article1 ul li small a {
-    color: #41b7d8;
-    line-height: 3;
-    margin-left: 5px;
-  }
-  /* line 224, ../resources/scss/styles.scss */
-  .article1 p {
-    font-weight: normal;
-    font-size: 20px;
-    text-align: justify;
-    line-height: 1.5;
-  }
-
-  /* line 231, ../resources/scss/styles.scss */
+  /* line 125, ../resources/scss/styles.scss */
   .main-sidebar {
     width: 35%;
     height: auto;
@@ -253,25 +156,25 @@ div .header-ul li a {
     padding: 13px;
   }
 
-  /* line 237, ../resources/scss/styles.scss */
+  /* line 131, ../resources/scss/styles.scss */
   .ads-images {
     width: auto;
     height: auto;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 244, ../resources/scss/styles.scss */
+  /* line 138, ../resources/scss/styles.scss */
   #searchbutton {
     display: none;
   }
 
-  /* line 248, ../resources/scss/styles.scss */
+  /* line 142, ../resources/scss/styles.scss */
   .search-bar input {
     display: none;
   }
 }
 @media screen and (max-width: 1100px) and (min-width: 800px) {
-  /* line 256, ../resources/scss/styles.scss */
+  /* line 150, ../resources/scss/styles.scss */
   #searchbutton {
     width: 17%;
     height: 49px;
@@ -280,7 +183,7 @@ div .header-ul li a {
     margin-left: -25px;
   }
 
-  /* line 264, ../resources/scss/styles.scss */
+  /* line 158, ../resources/scss/styles.scss */
   .search-bar input {
     width: 75%;
     height: 25px;
@@ -288,7 +191,7 @@ div .header-ul li a {
     border-radius: 10px 0 0 10px;
   }
 }
-/* line 273, ../resources/scss/styles.scss */
+/* line 167, ../resources/scss/styles.scss */
 .search-bar2 input {
   width: 75%;
   height: 20px;
@@ -296,7 +199,7 @@ div .header-ul li a {
   border-radius: 10px 0 0 10px;
 }
 
-/* line 280, ../resources/scss/styles.scss */
+/* line 174, ../resources/scss/styles.scss */
 #searchbutton2 {
   width: 17%;
   height: 40px;
@@ -305,7 +208,82 @@ div .header-ul li a {
   margin-left: -25px;
 }
 
-/* line 289, ../resources/scss/styles.scss */
+/* line 183, ../resources/scss/styles.scss */
 .ads ul {
   display: block;
+}
+
+/* line 188, ../resources/scss/styles.scss */
+.article1 {
+  float: right;
+  margin-top: 25px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 23px;
+  font-family: Georgia,"Times New Roman",Times,serif;
+}
+/* line 195, ../resources/scss/styles.scss */
+.article1 a {
+  text-decoration: none;
+  color: #333;
+}
+/* line 200, ../resources/scss/styles.scss */
+.article1 ul li {
+  display: block;
+  font-size: 20px;
+}
+/* line 203, ../resources/scss/styles.scss */
+.article1 ul li small {
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: normal;
+}
+/* line 206, ../resources/scss/styles.scss */
+.article1 ul li small a {
+  color: #41b7d8;
+  line-height: 3;
+  margin-left: 5px;
+}
+/* line 214, ../resources/scss/styles.scss */
+.article1 p {
+  font-weight: normal;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.5;
+}
+@media screen and (min-width: 1200px) {
+  /* line 188, ../resources/scss/styles.scss */
+  .article1 {
+    width: 80%;
+  }
+}
+
+/* line 224, ../resources/scss/styles.scss */
+.ads-text {
+  color: #41b7d8;
+  font-size: 11px;
+  font-family: "Helvetica Neue",Arial,sans-serif;
+  text-align: center;
+}
+
+/* line 230, ../resources/scss/styles.scss */
+.sidebar-common-ads, .sidebar-withus-ads {
+  float: left;
+  font-size: 15px;
+  opacity: .45;
+  font-family: "Helvetica Neue",Arial,sans-serif;
+}
+
+/* line 236, ../resources/scss/styles.scss */
+.sidebar-withus-ads {
+  float: right;
+  margin-right: 25px;
+  opacity: 1;
+  color: #41b7d8;
+}
+
+@media screen and (max-width: 1100px) {
+  /* line 243, ../resources/scss/styles.scss */
+  .main-sidebar {
+    visibility: hidden;
+  }
 }
