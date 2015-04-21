@@ -13,4 +13,10 @@ ul li{
 header{
 	height: 75px;
 }
+figure{
+	width: 75%;
+}
+figure a img{
+	width: 100%;
+}
 

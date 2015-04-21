@@ -25,9 +25,81 @@ div{
 		margin-top: 20px;
 		li{
 			margin-top: 10px;
-			font-weight: 400;
 		}
 	}
+}
+
+
+@media screen and (min-width: 1100px){
+.main-content{
+	background-color: white;
+	width: 60%;
+	height: auto;
+	float:left;
+	padding: 40px 20px;
+	border-radius: 0 20px 0 0;
+}
+}
+
+
+@media screen and (max-width: 1100px){
+	.sidebar-sublinks{
+		display: none;
+    }
+    .sidebar{
+    	display: none;
+    }
+    .search-bar{
+    	width: 100%;
+        height: 35px;
+        padding: 1em 2.5%;
+    }
+    .article1{
+	float:right; 
+	margin-top: 25px;
+	width: 100%;
+	font-weight: bold; 
+	font-size: 23px;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	a{
+		text-decoration: none;
+		color: $color-heading;
+	}
+	ul{		
+		li{
+			display: block;
+			font-size: 20px;
+			small{
+				color: $color-grey;				
+				font-weight: normal;
+				a{
+					color: $color-blue;
+					line-height: 3;
+					margin-left: 5px;
+				}
+			}
+		}
+	}
+	p{
+		font-weight: normal;
+	    font-size: 20px;
+	    text-align: justify;
+	    line-height: 1.5;
+	}
+}
+.main-content{
+	background-color: white;
+	width: 95%;
+	height: auto;
+	float:left;
+	padding: 40px 20px;
+	border-radius: 0 20px 0 0;
+	overflow: hidden;
+}
+}
+
+.nav-links{
+				display: inline-block;
 }
 
 @media screen and (min-width: 800px){  
@@ -46,35 +118,175 @@ div{
 		}
 	}
 }
-@media screen and (min-width: 900px) and (max-width: 1000px){
+// @media screen and (min-width: 900px) and (max-width: 1000px){
+// 	.sidebar ul{
+// 		display: table;
+// 		 li{
+// 			margin-left: 65px;
+// 			p{
+// 				font-weight: bold;
+// 				font-size: 11px;
+// 			}
+// 		}
+// 	}
+// }
+@media screen and (min-width: 1100px) and (max-width: 1200px){
 	.sidebar ul{
 		display: table;
+		
 		 li{
-			margin-left: 55px;
+			margin-left: 70px;
+			p{
+				font-weight: bold;
+				font-size: 13px;
+				border-bottom: .3em solid $color-red;
+			}
 		}
 	}
+	.main-content-links{
+	border-bottom: .3em solid $color-rose;
 }
-@media screen and (min-width: 500px) and (max-width: 900px){
-	.sidebar ul{
-		display: table;
-		 li{
-			margin-left: 25px;
+	.ads-images{
+	width: 150px;
+	height: auto;
+}
+	.sidebar-sublinks,.search-bar{
+		display: none;
+    }
+     .article1{
+	float:right; 
+	margin-top: 25px;
+	width: 100%;
+	font-weight: bold; 
+	font-size: 23px;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	a{
+		text-decoration: none;
+		color: $color-heading;
+	}
+	ul{		
+		li{
+			display: block;
+			font-size: 20px;
+			small{
+				color: $color-grey;				
+				font-weight: normal;
+				a{
+					color: $color-blue;
+					line-height: 3;
+					margin-left: 5px;
+				}
+			}
 		}
 	}
-}
-@media screen and (min-width: 500px) and (max-width: 900px){
-	.sidebar ul{
-		display: table;
-		 li{
-			margin-left: 15px;
-		}
+	p{
+		font-weight: normal;
+	    font-size: 20px;
+	    text-align: justify;
+	    line-height: 1.5;
 	}
 }
-@media screen and (max-width: 500px){
-	.sidebar ul{
-		display: table;
-		 li{
-			display: none;
+.main-sidebar{
+	width: 32%;
+	height: auto;
+	float:right;
+}
+}
+
+
+ @media screen and (min-width: 1200px){
+ .article1{
+	float:right; 
+	margin-top: 25px;
+	width: 65%;
+	font-weight: bold; 
+	font-size: 23px;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	a{
+		text-decoration: none;
+		color: $color-heading;
+	}
+	ul{		
+		li{
+			display: block;
+			font-size: 20px;
+			small{
+				color: $color-grey;				
+				font-weight: normal;
+				a{
+					color: $color-blue;
+					line-height: 3;
+					margin-left: 5px;
+				}
+			}
 		}
+	}
+	p{
+		font-weight: normal;
+	    font-size: 20px;
+	    text-align: justify;
+	    line-height: 1.5;
+	}
+}
+.main-sidebar{
+	width: 35%;
+	height: auto;
+	float:right;
+	padding:  13px;
+}
+.ads-images{
+	width: auto;
+	height: auto;
+}
+}
+
+@media screen and (max-width: 800px){
+#searchbutton{
+    	display: none;
+    }
+.search-bar{
+	input{
+		display: none;
+	}
+}
+}
+
+
+@media screen and (max-width: 1100px) and (min-width: 800px){
+#searchbutton{
+    	width: 17%;
+        height: 49px;
+  		background-color: $color-orange;
+	    border-radius: 0 10px 10px 0;
+	    margin-left: -25px;
+    }
+.search-bar{
+	input{
+		width: 75%;
+		height: 25px;
+		padding: 10px;
+		border-radius: 10px 0 0 10px;
+	}
+}
+}
+.search-bar2{
+	input{
+		width: 75%;
+		height: 20px;
+		padding: 8px;
+		border-radius: 10px 0 0 10px;
+	}
+}
+#searchbutton2{
+    	width: 17%;
+        height: 40px;
+  		background-color: $color-orange;
+	    border-radius: 0 10px 10px 0;
+	    margin-left: -25px;
+    }
+
+.ads{
+	ul{
+		display: block;
 	}
 }

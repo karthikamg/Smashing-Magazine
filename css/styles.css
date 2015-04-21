@@ -26,64 +26,286 @@ div .header-ul li a {
 /* line 26, ../resources/scss/styles.scss */
 .sidebar-sublinks ul li {
   margin-top: 10px;
-  font-weight: 400;
+}
+
+@media screen and (min-width: 1100px) {
+  /* line 34, ../resources/scss/styles.scss */
+  .main-content {
+    background-color: white;
+    width: 60%;
+    height: auto;
+    float: left;
+    padding: 40px 20px;
+    border-radius: 0 20px 0 0;
+  }
+}
+@media screen and (max-width: 1100px) {
+  /* line 46, ../resources/scss/styles.scss */
+  .sidebar-sublinks {
+    display: none;
+  }
+
+  /* line 49, ../resources/scss/styles.scss */
+  .sidebar {
+    display: none;
+  }
+
+  /* line 52, ../resources/scss/styles.scss */
+  .search-bar {
+    width: 100%;
+    height: 35px;
+    padding: 1em 2.5%;
+  }
+
+  /* line 57, ../resources/scss/styles.scss */
+  .article1 {
+    float: right;
+    margin-top: 25px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 23px;
+    font-family: Georgia,"Times New Roman",Times,serif;
+  }
+  /* line 64, ../resources/scss/styles.scss */
+  .article1 a {
+    text-decoration: none;
+    color: #333;
+  }
+  /* line 69, ../resources/scss/styles.scss */
+  .article1 ul li {
+    display: block;
+    font-size: 20px;
+  }
+  /* line 72, ../resources/scss/styles.scss */
+  .article1 ul li small {
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: normal;
+  }
+  /* line 75, ../resources/scss/styles.scss */
+  .article1 ul li small a {
+    color: #41b7d8;
+    line-height: 3;
+    margin-left: 5px;
+  }
+  /* line 83, ../resources/scss/styles.scss */
+  .article1 p {
+    font-weight: normal;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+  /* line 90, ../resources/scss/styles.scss */
+  .main-content {
+    background-color: white;
+    width: 95%;
+    height: auto;
+    float: left;
+    padding: 40px 20px;
+    border-radius: 0 20px 0 0;
+    overflow: hidden;
+  }
+}
+/* line 101, ../resources/scss/styles.scss */
+.nav-links {
+  display: inline-block;
 }
 
 @media screen and (min-width: 800px) {
-  /* line 34, ../resources/scss/styles.scss */
+  /* line 106, ../resources/scss/styles.scss */
   .logo-ul-size {
     padding: 15px;
     background-color: white;
     float: left;
   }
 }
-/* line 40, ../resources/scss/styles.scss */
+/* line 112, ../resources/scss/styles.scss */
 .social-logos {
   width: 40%;
 }
-/* line 43, ../resources/scss/styles.scss */
+/* line 115, ../resources/scss/styles.scss */
 .social-logos li a {
   background-image: url("../resources/images/channels.svg");
   background-size: 353% 600%;
 }
 
-@media screen and (min-width: 900px) and (max-width: 1000px) {
-  /* line 50, ../resources/scss/styles.scss */
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+  /* line 134, ../resources/scss/styles.scss */
   .sidebar ul {
     display: table;
   }
-  /* line 52, ../resources/scss/styles.scss */
+  /* line 137, ../resources/scss/styles.scss */
   .sidebar ul li {
-    margin-left: 55px;
+    margin-left: 70px;
   }
-}
-@media screen and (min-width: 500px) and (max-width: 900px) {
-  /* line 58, ../resources/scss/styles.scss */
-  .sidebar ul {
-    display: table;
+  /* line 139, ../resources/scss/styles.scss */
+  .sidebar ul li p {
+    font-weight: bold;
+    font-size: 13px;
+    border-bottom: 0.3em solid #B80000;
   }
-  /* line 60, ../resources/scss/styles.scss */
-  .sidebar ul li {
-    margin-left: 25px;
+
+  /* line 146, ../resources/scss/styles.scss */
+  .main-content-links {
+    border-bottom: 0.3em solid #FF6699;
   }
-}
-@media screen and (min-width: 500px) and (max-width: 900px) {
-  /* line 66, ../resources/scss/styles.scss */
-  .sidebar ul {
-    display: table;
+
+  /* line 149, ../resources/scss/styles.scss */
+  .ads-images {
+    width: 150px;
+    height: auto;
   }
-  /* line 68, ../resources/scss/styles.scss */
-  .sidebar ul li {
-    margin-left: 15px;
-  }
-}
-@media screen and (max-width: 500px) {
-  /* line 74, ../resources/scss/styles.scss */
-  .sidebar ul {
-    display: table;
-  }
-  /* line 76, ../resources/scss/styles.scss */
-  .sidebar ul li {
+
+  /* line 153, ../resources/scss/styles.scss */
+  .sidebar-sublinks, .search-bar {
     display: none;
   }
+
+  /* line 156, ../resources/scss/styles.scss */
+  .article1 {
+    float: right;
+    margin-top: 25px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 23px;
+    font-family: Georgia,"Times New Roman",Times,serif;
+  }
+  /* line 163, ../resources/scss/styles.scss */
+  .article1 a {
+    text-decoration: none;
+    color: #333;
+  }
+  /* line 168, ../resources/scss/styles.scss */
+  .article1 ul li {
+    display: block;
+    font-size: 20px;
+  }
+  /* line 171, ../resources/scss/styles.scss */
+  .article1 ul li small {
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: normal;
+  }
+  /* line 174, ../resources/scss/styles.scss */
+  .article1 ul li small a {
+    color: #41b7d8;
+    line-height: 3;
+    margin-left: 5px;
+  }
+  /* line 182, ../resources/scss/styles.scss */
+  .article1 p {
+    font-weight: normal;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+  /* line 189, ../resources/scss/styles.scss */
+  .main-sidebar {
+    width: 32%;
+    height: auto;
+    float: right;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 198, ../resources/scss/styles.scss */
+  .article1 {
+    float: right;
+    margin-top: 25px;
+    width: 65%;
+    font-weight: bold;
+    font-size: 23px;
+    font-family: Georgia,"Times New Roman",Times,serif;
+  }
+  /* line 205, ../resources/scss/styles.scss */
+  .article1 a {
+    text-decoration: none;
+    color: #333;
+  }
+  /* line 210, ../resources/scss/styles.scss */
+  .article1 ul li {
+    display: block;
+    font-size: 20px;
+  }
+  /* line 213, ../resources/scss/styles.scss */
+  .article1 ul li small {
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: normal;
+  }
+  /* line 216, ../resources/scss/styles.scss */
+  .article1 ul li small a {
+    color: #41b7d8;
+    line-height: 3;
+    margin-left: 5px;
+  }
+  /* line 224, ../resources/scss/styles.scss */
+  .article1 p {
+    font-weight: normal;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+  /* line 231, ../resources/scss/styles.scss */
+  .main-sidebar {
+    width: 35%;
+    height: auto;
+    float: right;
+    padding: 13px;
+  }
+
+  /* line 237, ../resources/scss/styles.scss */
+  .ads-images {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 244, ../resources/scss/styles.scss */
+  #searchbutton {
+    display: none;
+  }
+
+  /* line 248, ../resources/scss/styles.scss */
+  .search-bar input {
+    display: none;
+  }
+}
+@media screen and (max-width: 1100px) and (min-width: 800px) {
+  /* line 256, ../resources/scss/styles.scss */
+  #searchbutton {
+    width: 17%;
+    height: 49px;
+    background-color: #e85c33;
+    border-radius: 0 10px 10px 0;
+    margin-left: -25px;
+  }
+
+  /* line 264, ../resources/scss/styles.scss */
+  .search-bar input {
+    width: 75%;
+    height: 25px;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+  }
+}
+/* line 273, ../resources/scss/styles.scss */
+.search-bar2 input {
+  width: 75%;
+  height: 20px;
+  padding: 8px;
+  border-radius: 10px 0 0 10px;
+}
+
+/* line 280, ../resources/scss/styles.scss */
+#searchbutton2 {
+  width: 17%;
+  height: 40px;
+  background-color: #e85c33;
+  border-radius: 0 10px 10px 0;
+  margin-left: -25px;
+}
+
+/* line 289, ../resources/scss/styles.scss */
+.ads ul {
+  display: block;
 }
