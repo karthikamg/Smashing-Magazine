@@ -1,11 +1,9 @@
-#header-navlittle{
-	background: url('../resources/images/navilittlebook.png') no-repeat right top;
-}
 .social-icons{
-	width: 15px;
-	height: 15px;
-	margin-top: 60px;
-	margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  margin-top: 60px;
+  margin-left: 5px;
+  border-radius: 10px;
 }
 .margin-left{
 	margin-left: 35px;
@@ -78,7 +76,7 @@
 
 @media screen and (min-width: 800px){
 	.main-header{
-		width: 40%;
+		width: 60%;
 		float: left;
 	}
 	.logo{

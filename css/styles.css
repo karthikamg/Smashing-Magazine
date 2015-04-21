@@ -100,47 +100,57 @@ div .main-header li a {
 }
 /* line 84, ../resources/scss/styles.scss */
 .social-logos {
-  width: 50%;
+  width: 40%;
 }
 /* line 87, ../resources/scss/styles.scss */
 .social-logos li a {
   background-image: url("../resources/images/channels.svg");
   background-size: 353% 600%;
 }
+@media screen and (max-width: 1150px) {
+  /* line 84, ../resources/scss/styles.scss */
+  .social-logos {
+    width: 30%;
+  }
+  /* line 94, ../resources/scss/styles.scss */
+  .social-logos .main-header {
+    width: 60%;
+  }
+}
 
 @media screen and (min-width: 1100px) and (max-width: 1200px) {
-  /* line 94, ../resources/scss/styles.scss */
+  /* line 100, ../resources/scss/styles.scss */
   .sidebar ul {
     display: table;
   }
-  /* line 97, ../resources/scss/styles.scss */
+  /* line 103, ../resources/scss/styles.scss */
   .sidebar ul li {
     margin-left: 70px;
   }
-  /* line 99, ../resources/scss/styles.scss */
+  /* line 105, ../resources/scss/styles.scss */
   .sidebar ul li p {
     font-weight: bold;
     font-size: 13px;
     border-bottom: 0.3em solid #B80000;
   }
 
-  /* line 106, ../resources/scss/styles.scss */
+  /* line 112, ../resources/scss/styles.scss */
   .main-content-links {
     border-bottom: 0.3em solid #FF6699;
   }
 
-  /* line 109, ../resources/scss/styles.scss */
+  /* line 115, ../resources/scss/styles.scss */
   .ads-images {
     width: 150px;
     height: auto;
   }
 
-  /* line 113, ../resources/scss/styles.scss */
+  /* line 119, ../resources/scss/styles.scss */
   .sidebar-sublinks, .search-bar {
     display: none;
   }
 
-  /* line 116, ../resources/scss/styles.scss */
+  /* line 122, ../resources/scss/styles.scss */
   .main-sidebar {
     width: 32%;
     height: auto;
@@ -148,7 +158,7 @@ div .main-header li a {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 125, ../resources/scss/styles.scss */
+  /* line 131, ../resources/scss/styles.scss */
   .main-sidebar {
     width: 35%;
     height: auto;
@@ -156,25 +166,25 @@ div .main-header li a {
     padding: 13px;
   }
 
-  /* line 131, ../resources/scss/styles.scss */
+  /* line 137, ../resources/scss/styles.scss */
   .ads-images {
     width: auto;
     height: auto;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 138, ../resources/scss/styles.scss */
+  /* line 144, ../resources/scss/styles.scss */
   #searchbutton {
     display: none;
   }
 
-  /* line 142, ../resources/scss/styles.scss */
+  /* line 148, ../resources/scss/styles.scss */
   .search-bar input {
     display: none;
   }
 }
 @media screen and (max-width: 1100px) and (min-width: 800px) {
-  /* line 150, ../resources/scss/styles.scss */
+  /* line 156, ../resources/scss/styles.scss */
   #searchbutton {
     width: 17%;
     height: 49px;
@@ -183,7 +193,7 @@ div .main-header li a {
     margin-left: -25px;
   }
 
-  /* line 158, ../resources/scss/styles.scss */
+  /* line 164, ../resources/scss/styles.scss */
   .search-bar input {
     width: 75%;
     height: 25px;
@@ -191,7 +201,7 @@ div .main-header li a {
     border-radius: 10px 0 0 10px;
   }
 }
-/* line 167, ../resources/scss/styles.scss */
+/* line 173, ../resources/scss/styles.scss */
 .search-bar2 input {
   width: 75%;
   height: 20px;
@@ -199,7 +209,7 @@ div .main-header li a {
   border-radius: 10px 0 0 10px;
 }
 
-/* line 174, ../resources/scss/styles.scss */
+/* line 180, ../resources/scss/styles.scss */
 #searchbutton2 {
   width: 17%;
   height: 40px;
@@ -208,12 +218,12 @@ div .main-header li a {
   margin-left: -25px;
 }
 
-/* line 183, ../resources/scss/styles.scss */
+/* line 189, ../resources/scss/styles.scss */
 .ads ul {
   display: block;
 }
 
-/* line 188, ../resources/scss/styles.scss */
+/* line 194, ../resources/scss/styles.scss */
 .article1 {
   float: right;
   margin-top: 25px;
@@ -222,28 +232,28 @@ div .main-header li a {
   font-size: 23px;
   font-family: Georgia,"Times New Roman",Times,serif;
 }
-/* line 195, ../resources/scss/styles.scss */
+/* line 201, ../resources/scss/styles.scss */
 .article1 a {
   text-decoration: none;
   color: #333;
 }
-/* line 200, ../resources/scss/styles.scss */
+/* line 206, ../resources/scss/styles.scss */
 .article1 ul li {
   display: block;
   font-size: 20px;
 }
-/* line 203, ../resources/scss/styles.scss */
+/* line 209, ../resources/scss/styles.scss */
 .article1 ul li small {
   color: rgba(0, 0, 0, 0.3);
   font-weight: normal;
 }
-/* line 206, ../resources/scss/styles.scss */
+/* line 212, ../resources/scss/styles.scss */
 .article1 ul li small a {
   color: #41b7d8;
   line-height: 3;
   margin-left: 5px;
 }
-/* line 214, ../resources/scss/styles.scss */
+/* line 220, ../resources/scss/styles.scss */
 .article1 p {
   font-weight: normal;
   font-size: 20px;
@@ -251,13 +261,13 @@ div .main-header li a {
   line-height: 1.5;
 }
 @media screen and (min-width: 1200px) {
-  /* line 188, ../resources/scss/styles.scss */
+  /* line 194, ../resources/scss/styles.scss */
   .article1 {
     width: 80%;
   }
 }
 
-/* line 224, ../resources/scss/styles.scss */
+/* line 230, ../resources/scss/styles.scss */
 .ads-text {
   color: #41b7d8;
   font-size: 11px;
@@ -265,7 +275,7 @@ div .main-header li a {
   text-align: center;
 }
 
-/* line 230, ../resources/scss/styles.scss */
+/* line 236, ../resources/scss/styles.scss */
 .sidebar-common-ads, .sidebar-withus-ads {
   float: left;
   font-size: 15px;
@@ -273,7 +283,7 @@ div .main-header li a {
   font-family: "Helvetica Neue",Arial,sans-serif;
 }
 
-/* line 236, ../resources/scss/styles.scss */
+/* line 242, ../resources/scss/styles.scss */
 .sidebar-withus-ads {
   float: right;
   margin-right: 25px;
@@ -282,8 +292,31 @@ div .main-header li a {
 }
 
 @media screen and (max-width: 1100px) {
-  /* line 243, ../resources/scss/styles.scss */
+  /* line 249, ../resources/scss/styles.scss */
   .main-sidebar {
     visibility: hidden;
+  }
+}
+
+/* line 254, ../resources/scss/styles.scss */
+#header-navlittle {
+  background: url("../resources/images/navilittlebook.png") no-repeat right top;
+}
+
+/* line 257, ../resources/scss/styles.scss */
+#header-navlittle:hover {
+  background-color: yellow;
+}
+
+@media screen and (max-width: 1150px) {
+  /* line 260, ../resources/scss/styles.scss */
+  .search-text {
+    display: none;
+  }
+}
+@media screen and (min-width: 1150px) {
+  /* line 260, ../resources/scss/styles.scss */
+  .search-text {
+    margin-left: 35px;
   }
 }
