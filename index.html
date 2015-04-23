@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/classes.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'> -->
 </head>
 <body>
 	<header>
@@ -15,7 +16,15 @@
 				<li class="header-links" id="header-navlittle"><a href="http://www.smashingmagazine.com/books/">eBooks</a></li>
 				<li class="header-links"><a href="http://www.smashingmagazine.com/books/">Tickets</a></li>
 				<li class="header-links"><a href="http://www.smashingmagazine.com/books/">Shop</a></li>
-				<li class="header-links"><a href="http://www.smashingmagazine.com/books/">Jobs</a></li> 
+				<li class="header-links"><a href="http://www.smashingmagazine.com/books/">Jobs</a></li>
+			</ul>
+			<ul class="shortcuts"> 
+				<li class="shortbuttons">
+					<a href="http://www.smashingmagazine.com/books/"><img src ='resources/images/search.jpg' onclick="window.alert('search')"></a>
+				</li>
+				<li class="shortbuttons">
+					<a href="http://www.smashingmagazine.com/books/"><img src ='resources/images/menu.png' class="menu" onclick="window.alert('menu')"></a>
+				</li>
 			</ul>
 		</div>
 		<div class="social-logos">
@@ -114,8 +123,32 @@
 					<a href=""><img src="resources/images/front-page-Gilt-lack-category-specific-filters-opt.jpg"></a>
 				</figure>
 			</article>
+
+
+			
+			<article class="margin-top article1">
+				<header>
+					<h2><a href="http://www.smashingmagazine.com/2015/04/20/the-current-state-of-e-commerce-filtering/">Extending WordPress With Custom Content Types</a></h2>
+				</header>
+				<ul>
+					<li style="border-bottom: .08em solid #e5e5e5;"><small>By <a href="http://www.smashingmagazine.com/author/christian-holst/">Bryian Onirio</a></small></li>
+					<li style="display: inline-block;"><small><img src="resources/images/date.gif">April 20th, 2015</small></li>
+					<li style="display: inline-block; margin-left: 25px;"><small><img src="resources/images/link.gif"><a href="">Techniques(WP)</a></small></li>
+					<li><small><img src="resources/images/comment.gif"><a href="http://www.smashingmagazine.com/author/christian-holst/">20 Comments</a></small></li>
+				</ul>
+				<p>
+					WordPress does some pretty amazing things out of the box. It handles content management as well as any other open-source solution out there — and better than many commercial solutions. One of the best attributes of WordPress is its ease of use. It’s easy because there’s not a significant amount of bloat with endless bells and whistles that steepen the learning curve.
+				</p>
+				<figure>
+					<a href=""><img src="resources/images/WordPress.png"></a>
+				</figure>
+				<p>
+					On the flip side, some might find WordPress a little… well, light. It does a lot, but not quite enough. If you find yourself hacking WordPress to do the things you wish it would do, then the chances are high that this article is for you. WordPress can be easily extended to fit the requirements of a custom data architecture. We’re going to explore the <strong>process of registering new data types</strong> in a fully compliant manner.
+				</p>
+			</article>
+
 		</section>
-		<span class="main-sidebar">
+		<section class="main-sidebar">
 			<!-- <h3>Search on Smashing Magazine</h3> -->
 			<div class="search-bar2">
 				<input type="text" placeholder="e.g. JavaScript">
@@ -137,7 +170,21 @@
 				</ul>
 				</p>
 			</section>
-		</span>
+			<section class="newsletter">
+				<header>
+					<img src="resources/images/letters.png">Smashing NewsLetter
+				</header>
+				<p>Subscribe to our email newsletter for useful tips and valuable resources, sent out every second Tuesday.</p>
+				<div class="search-bar2">
+					<input type="text" placeholder="email address" class="margin-top">
+					<button type="submit" id="searchbutton2">Subscribe</button>
+				</div>
+			</section>
+			<section class="newsletter">
+				<img src="resources/images/child.png" class="ebook-images"><img>
+				<p style="float:right;width:72%;">Hungry for more content? Over 60 <strong>eBooks</strong> are waiting to be discovered in our lovely <a href="https://shop.smashingmagazine.com/products/smashing-library">Smashing Library</a>. And guess what? You can watch Smashing Conference talks there, too.</p>
+			</section>
+		</section>
 	</section>
 </body>
 </html>
