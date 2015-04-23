@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/classes.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="js/test.js"></script>
 	<!-- <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'> -->
 </head>
 <body>
@@ -20,10 +21,10 @@
 			</ul>
 			<ul class="shortcuts"> 
 				<li class="shortbuttons">
-					<a href="http://www.smashingmagazine.com/books/"><img src ='resources/images/search.jpg' onclick="window.alert('search')"></a>
+					<img src ='resources/images/search.jpg' onclick="tosearchBottom()">
 				</li>
 				<li class="shortbuttons">
-					<a href="http://www.smashingmagazine.com/books/"><img src ='resources/images/menu.png' class="menu" onclick="window.alert('menu')"></a>
+					<img src ='resources/images/menu.png' class="menu" onclick="tomenuBottom()">
 				</li>
 			</ul>
 		</div>
@@ -105,7 +106,9 @@
 					</li>
 				</ul>
 			</div>
+
 			<div class="main-content-links"></div>
+
 			<article class="article1">
 				<header>
 					<h2><a href="http://www.smashingmagazine.com/2015/04/20/the-current-state-of-e-commerce-filtering/">The Current State Of E-Commerce Filtering</a></h2>
@@ -146,8 +149,37 @@
 					On the flip side, some might find WordPress a little… well, light. It does a lot, but not quite enough. If you find yourself hacking WordPress to do the things you wish it would do, then the chances are high that this article is for you. WordPress can be easily extended to fit the requirements of a custom data architecture. We’re going to explore the <strong>process of registering new data types</strong> in a fully compliant manner.
 				</p>
 			</article>
-
 		</section>
+
+			<div id="menu-contents">
+				<ul>
+					<li class="menu-scroll-heading">Smashing Pages:</li>
+					<li class="menu-scroll-link">Book</li>
+					<li class="menu-scroll-link">eBook</li>
+					<li class="menu-scroll-link">Ticket</li>
+					<li class="menu-scroll-link">Shop</li>
+					<li class="menu-scroll-link">Email</li>
+					<li class="menu-scroll-link">NewsLetter</li>
+					<li class="menu-scroll-link">Jobs</li>
+					<li class="menu-scroll-link">About Us</li>
+					<li class="menu-scroll-heading">Categories:</li>
+					<li class="menu-scroll-link">Coding</li>
+					<li class="menu-scroll-link">Design</li>
+					<li class="menu-scroll-link">Mobile</li>
+					<li class="menu-scroll-link">Graphics</li>
+					<li class="menu-scroll-link">UX Design</li>
+					<li class="menu-scroll-link">WordPress</li>
+				</ul>
+			</div>
+
+			<div id="search-contents">
+				<input type="text" placeholder="e.g CSS">
+				<button type="submit">Search</button>
+				<p>
+					<a class="scrollup" href="#">Back to Top</a>
+				</p>
+			</div>		
+
 		<section class="main-sidebar">
 			<!-- <h3>Search on Smashing Magazine</h3> -->
 			<div class="search-bar2">
@@ -186,5 +218,6 @@
 			</section>
 		</section>
 	</section>
+	
 </body>
 </html>

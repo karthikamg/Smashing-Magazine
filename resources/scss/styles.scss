@@ -1,7 +1,6 @@
 @import "compass";
 @import '_variables.scss';
 
-
 button{
 	color: $color-white;
 }
@@ -37,7 +36,6 @@ div{
 			margin-left: 5px;
 			width: 40px;
 			height: 40px;
-			a{
 				img{
 				width: 40px;
 				height: 40px;
@@ -46,10 +44,10 @@ div{
 				background-color: none;
 				border: 1px solid $color-black;
 			}
-			}
 			.menu{
 				border: 1px solid red;
 				border-radius: 5px;
+				cursor: pointer;
 			}	
 			}
 			
@@ -67,6 +65,7 @@ div{
 	width: 100%;
 	height: auto;
 	color: $color-black;
+	overflow: hidden;
 }
 
 .sidebar-sublinks{
@@ -431,6 +430,71 @@ div{
 	  	width:25%;
 	  	height: 150px;
 	  }
+}
+
+#menu-contents{	
+	@media screen and (max-width: 800px){
+		width: 90%;
+		height: 450px;
+		text-align: center;
+		line-height: 3;
+
+		-webkit-column-count: 2;
+		-webkit-column-gap: 40px;
+		-webkit-column-rule-width: 2px;
+
+		ul{
+			.menu-scroll-link{
+				display: block;
+				color: $color-blue;
+				border-bottom: 1px solid $color-grey;
+
+				&:hover{
+					background-color: $color-yellow;
+					cursor: pointer;
+				}
+			}
+			.menu-scroll-heading{
+					font-weight: bold;
+					color: $color-black;
+
+					&:hover{
+						background-color: none;
+					}
+		    	}
+			}
+		}
+	@media screen and (min-width: 800px){
+		display: none;
+	}
+}
+#search-contents{	
+	@media screen and (max-width: 800px){
+		input{
+		width: 75%;
+  		height: 35px;
+  		border-radius: 10px 0 0 10px;
+  		margin-top: 35px;
+		}
+		button{
+		width: 17%;
+        height: 40px;
+  		background-color: $color-orange;
+	    border-radius: 0 10px 10px 0;
+	    margin-left: -25px;
+		}
+	}
+	@media screen and (min-width: 800px){
+		display: none;
+	}
+}
+.scrollup{
+	@media screen and (max-width: 800px){
+		margin-top: 25px;
+		text-decoration: underline;
+		font-size: 15px;
+		cursor: pointer;
+	}
 }
 
 

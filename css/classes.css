@@ -5,6 +5,13 @@
   margin-left: 5px;
   border-radius: 10px;
 }
+
+.check{
+	width: 25px;
+	height: 25px;
+	background-color: green;
+}
+
 .margin-left{
 	margin-left: 35px;
 }
@@ -95,30 +102,10 @@
 
 @media screen and (max-width: 800px){
 	.sidebar,.sidebar-sublinks,.main-sidebar{
-		visibility: hidden;
+		display: none;
 	}
 }
-/*@media screen and (max-width: 1020px){
-	.ai1,.ai2,.ai3,.ai4,.ai5{
-		visibility: hidden;
-	}
-	.ai{
-		width: 350px;
-		height: auto;
-		margin-left: 83px;
-	}
-	.sidebar-ads {
-	    width: 80%;
-	    height: 20px;
-	    margin-top: 30px;
-	}
-	.ads-images{
-		width: 300px;
-		height: auto;
-	}
-}*/
 
-}
 @media screen and (min-width: 800px) and (max-width: 1020px){
     .sidebar{
     	width: 20%;
