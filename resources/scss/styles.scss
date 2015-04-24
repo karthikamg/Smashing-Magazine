@@ -4,6 +4,79 @@
 button{
 	color: $color-white;
 }
+
+.social-icons{
+  width: 20px;
+  height: 20px;
+  margin-top: 60px;
+  margin-left: 5px;
+  border-radius: 10px;
+  opacity: .45;
+
+  &:hover{
+  	opacity: 1.0;
+  	cursor: pointer;
+  }
+}
+
+.read-more{
+	width: 20%;
+	height: 40px;
+	background-color: $color-blue;
+	color: $color-white;
+	border-radius: 15px;
+	font-size: 18px;
+	margin-top: 25px;
+	border: none;
+}
+
+.footerbutton{
+	width: 50px;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    height: 30px;
+}
+
+.footer{
+	text-align: center;
+	width: 75%;
+	height: auto;
+	float: right;
+	width: 100%;
+	padding: 20px 0;
+
+	.current-page{
+		background-color: $color-blue;
+		color: $color-white;
+		@extend .footerbutton;
+	}
+			
+	.next-page{
+		background-color: $color-white;
+		color: $color-blue;
+		@extend .footerbutton;
+
+	   &:hover{
+	   		background-color: $color-blue;
+			color: $color-white;
+			cursor: pointer;
+	   }
+	}
+	div{
+		.next{
+			@extend .footerbutton;
+			background-color: $color-orange;
+			color: $color-white;
+
+			&:hover{
+				background-color: $color-black;
+				cursor:pointer;
+			}
+		}
+	}
+}
+
 div{
 	.main-header{
 		height: 85px;
@@ -43,6 +116,7 @@ div{
 				&:hover{
 				background-color: none;
 				border: 1px solid $color-black;
+				border-radius: 5px;
 			}
 			.menu{
 				border: 1px solid red;
@@ -101,7 +175,7 @@ div{
 	}
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1100px) and (min-width: 800px){
 	// .sidebar-sublinks{
 	// 	display: none;
  //    }
@@ -144,7 +218,7 @@ div{
   		  text-align: center;
   		  float: right;
 		  background-color: $color-white;
-		  border-top: 0.6em solid #3300CC;
+		  border-top: 0.6em solid $color-blue;
 	}
 }
 
@@ -332,10 +406,13 @@ div{
 		ul{
 			li{
 				display: block;
+				font-size: 17px;
+  				color: $color-grey;
 		        p{
 		        	font-weight: bold; 
 					margin-top: 25px;
 					height: 25px;
+					color: $color-black;
 
 					&:hover{
 						border-bottom: 0.1em solid $color-grey;
@@ -436,18 +513,22 @@ div{
 	@media screen and (max-width: 800px){
 		width: 90%;
 		height: 450px;
-		text-align: center;
 		line-height: 3;
+		font-size: 18px;
 
-		-webkit-column-count: 2;
-		-webkit-column-gap: 40px;
-		-webkit-column-rule-width: 2px;
+		// -webkit-column-count: 2;
+		// -webkit-column-gap: 40px;
+		// -webkit-column-rule-width: 2px;
+
+		display: table;
+		border-collapse: collapse;
+		margin-left: 80px;
 
 		ul{
 			.menu-scroll-link{
-				display: block;
+				width: 100%;
 				color: $color-blue;
-				border-bottom: 1px solid $color-grey;
+				border-bottom: 1px dotted $color-grey;
 
 				&:hover{
 					background-color: $color-yellow;
@@ -469,6 +550,8 @@ div{
 	}
 }
 #search-contents{	
+	text-align: center;
+
 	@media screen and (max-width: 800px){
 		input{
 		width: 75%;
