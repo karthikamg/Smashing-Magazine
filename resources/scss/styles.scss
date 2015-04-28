@@ -149,7 +149,6 @@ div{
 		li{
 			margin-top: 10px;
 			cursor: pointer;
-			height: 25px;
 			width: 90%;
 			&:hover{
 				background-color: $color-hover;
@@ -515,7 +514,7 @@ div{
 		// -webkit-column-gap: 40px;
 		// -webkit-column-rule-width: 2px;
 
-		display: table;
+		// display: table;
 		border-collapse: collapse;
 		margin-left: 80px;
 
@@ -554,7 +553,7 @@ div{
   		border-radius: 10px 0 0 10px;
   		margin-top: 35px;
 		}
-		button{
+		#search-button{
 		width: 17%;
         height: 40px;
   		background-color: $color-orange;
@@ -573,6 +572,9 @@ div{
 		font-size: $fontsize-adscommon;
 		cursor: pointer;
 		float: right;
+	}
+	@media screen and (min-width: 800px){
+		display: none;
 	}
 }
 
@@ -633,5 +635,15 @@ footer{
 	  		font-size: $fontsize-sidebar;
 	  	}
 }
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
+.show-inline{
+	display: inline;
+}
+
 
 
