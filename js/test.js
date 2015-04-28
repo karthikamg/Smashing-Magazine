@@ -1,3 +1,4 @@
+window.addEventListener("resize", menu);
 
 function tosearchBottom()
 {
@@ -5,37 +6,27 @@ function tosearchBottom()
 
 	menu = document.getElementById("menu-contents");
 	search = document.getElementById("search-contents");
-	media = window.matchMedia("(max-width: 800px)");
+	backtotop = document.getElementById("scrollup");
 
-	// var $window = $(window);
-
-
-	// menu.style.display= 'none';
-	// search.style.display= 'initial';
-	
-
-	// if(media.matches){
-	// 	search.style.display= 'initial';
-	// }
-	// else{
-	// 	search.style.display= 'none';
-	// }	
+	search.style.display= 'initial';
+	menu.style.display= 'none';	
 }
 function tomenuBottom()
 {
 	window.scrollTo(0, document.body.scrollHeight);
 
-	// search.style.display= 'none';
-	// menu.style.display= 'initial';
-	
+	menu.style.display= 'table';
+	search.style.display= 'none';
+}
 
-	// if(media.matches){
-	// 	menu.style.display= 'initial';
-	// }
-	// else{
-	// 	menu.style.display= 'none';
-	// 	window.alert("alert");
-	// }
+function menu()
+{
+	media = window.matchMedia("(min-width: 800px)");
+	if(media.matches){
+		search.style.display= 'none';
+		menu.style.display= 'none';
+		backtotop.style.display= 'none';
+	}
 }
 
 $(window).resize(function() {

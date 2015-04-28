@@ -1,5 +1,6 @@
 @import "compass";
 @import '_variables.scss';
+@import '_base.scss';
 
 button{
 	color: $color-white;
@@ -25,7 +26,7 @@ button{
 	background-color: $color-blue;
 	color: $color-white;
 	border-radius: 15px;
-	font-size: 18px;
+	font-size: $fontsize-readmore;
 	margin-top: 25px;
 	border: none;
 }
@@ -176,12 +177,6 @@ div{
 }
 
 @media screen and (max-width: 1100px) and (min-width: 800px){
-	// .sidebar-sublinks{
-	// 	display: none;
- //    }
- //    .sidebar{
- //    	display: none;
- //    }
     .search-bar{
     	width: 100%;
         height: 35px;
@@ -229,7 +224,7 @@ div{
 			margin-left: 50px;
 			p{
 				font-weight: bold;
-				font-size: 13px;
+				font-size: $fontsize-sidebar;
 				border-bottom: .3em solid $color-red;
 			}
 		}
@@ -319,7 +314,7 @@ div{
 	margin-top: 25px;
 	width: 100%;
 	font-weight: bold; 
-	font-size: 23px;
+	font-size: $fontsize-article;
 	font-family: $fontfamily;
 	padding: 20px 0;
 	border-bottom: 3px solid $color-lightblue;
@@ -338,7 +333,7 @@ div{
 	ul{		
 		li{
 			display: block;
-			font-size: 20px;
+			font-size: $fontsize-article1header;
 			small{
 				color: $color-grey;				
 				font-weight: normal;
@@ -352,7 +347,7 @@ div{
 	}
 	p{
 		font-weight: normal;
-	    font-size: 20px;
+	    font-size: $fontsize-article1header;
 	    text-align: justify;
 	    line-height: 1.5;
 	}
@@ -362,13 +357,13 @@ div{
 }
 .ads-text{
 	color: $color-blue;
-	font-size: 11px;
+	font-size: $fontsize-adtext;
 	font-family: $font-family-hel;
 	text-align: center;
 }
 .sidebar-common-ads{
 	float: left;
-	font-size: 15px;
+	font-size: $fontsize-adscommon;
 	opacity: .45;
 	font-family: $font-family-hel;
 }
@@ -406,7 +401,7 @@ div{
 		ul{
 			li{
 				display: block;
-				font-size: 17px;
+				font-size: $fontsize-sidebarsublink;
   				color: $color-grey;
 		        p{
 		        	font-weight: bold; 
@@ -455,7 +450,7 @@ div{
 	}
 	.sidebar-sublinks{
 		display: block;
-		font-size: 17px;
+		font-size: $fontsize-sidebarsublink;
 		color: rgba(0, 0, 0, 0.3);;
     }
     .search-bar{
@@ -465,7 +460,7 @@ div{
 	width: 35%;
 	height: auto;
 	float:right;
-	padding:  13px;
+	padding:  $fontsize-sidebar;
 	}
 	.ads-images{
 	width: auto;
@@ -496,7 +491,7 @@ div{
 	  header{
 	  	color: $color-lightblue;
 	  	font-weight: bold;
-	    font-size: 20px;
+	    font-size: $fontsize-article1header;
 	    height: 55px;
 	  }
 	  p{
@@ -509,12 +504,12 @@ div{
 	  }
 }
 
-#menu-contents{	
+#menu-contents{
 	@media screen and (max-width: 800px){
 		width: 90%;
 		height: 450px;
 		line-height: 3;
-		font-size: 18px;
+		font-size: $fontsize-readmore;
 
 		// -webkit-column-count: 2;
 		// -webkit-column-gap: 40px;
@@ -571,12 +566,13 @@ div{
 		display: none;
 	}
 }
-.scrollup{
+#scrollup{
 	@media screen and (max-width: 800px){
 		margin-top: 25px;
 		text-decoration: underline;
-		font-size: 15px;
+		font-size: $fontsize-adscommon;
 		cursor: pointer;
+		float: right;
 	}
 }
 
@@ -618,14 +614,14 @@ footer{
 	  }
 
 	  .footer-text{
-	  	font-size: 15px;
+	  	font-size: $fontsize-adscommon;
 	  }
 	  .footer-header{
 	  	color: $color-blue;
-	  	font-size: 18px;
+	  	font-size: $fontsize-readmore;
 
 	  	@media screen and (min-width: 1000px){
-	  		font-size: 13px;
+	  		font-size: $fontsize-sidebar;
 	  	}
 	  }
 }
@@ -634,7 +630,7 @@ footer{
 	  	width: 100%;
 	  	color: $color-grey;
 	  	@media screen and (min-width: 1000px){
-	  		font-size: 13px;
+	  		font-size: $fontsize-sidebar;
 	  	}
 }
 

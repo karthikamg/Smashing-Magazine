@@ -5,22 +5,28 @@
 body{
 	background: white url('../resources/images/bgimg.png') repeat;
 	border-left: .625em solid transparent;
+	font-family: $fontfamily;
+	font-size: 1em;
 }
-ul li{
+ul{
+	li{
 		list-style-type: none;
 		display: inline-block;
+	}
 }
 header{
 	height: 85px;
 }
 figure{
 	width: 80%;
-}
-figure a img{
-	width: 100%;
+	a{
+		img{
+			width: 100%;
+		}
+	}
 }
 h3{
-		font-weight: normal;
-		opacity: .45;
+	font-weight: normal;
+	opacity: .45;
 }
 

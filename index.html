@@ -4,7 +4,7 @@
 	<title>Smashing Magazine</title>
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/classes.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" media="(min-width:50px)" href="css/styles.css">
 	<script type="text/javascript" src="js/test.js"></script>
 	<!-- <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'> -->
 </head>
@@ -174,7 +174,7 @@
 
 		</section>
 
-			<div id="menu-contents">
+			<div id="menu-contents" onresize="menu()">
 				<ul style="float: left;width: 250px;">
 					<li class="menu-scroll-heading">Smashing Pages:</li>
 					<li class="menu-scroll-link">Book</li>
@@ -195,18 +195,14 @@
 					<li class="menu-scroll-link">UX Design</li>
 					<li class="menu-scroll-link">WordPress</li>
 				</ul>
-				<!-- <div>
-					<a class="scrollup" href="#">Back to Top</a>
-				</div> -->
 			</div>
 
 			<div id="search-contents">
 				<input type="text" placeholder="e.g CSS">
 				<button type="submit">Search</button>
-				<p>
-					<a class="scrollup" href="#">Back to Top</a>
-				</p>
-			</div>		
+			</div>	
+
+			<a id="scrollup" href="#">Back to Top</a>
 
 		<section class="main-sidebar">
 			<!-- <h3>Search on Smashing Magazine</h3> -->
