@@ -11,8 +11,8 @@ function tosearchBottom()
 	search = document.getElementById("search-contents");
 	backtotop = document.getElementById("scrollup");
 	searchbutton = document.getElementById("search-button");
-
 	media = window.matchMedia("(max-width: 800px)");
+
 	if(media.matches){
 		search.className = "show";
 		backtotop.className = "show";
@@ -20,17 +20,13 @@ function tosearchBottom()
 		searchbutton.className = "show-inline";
 	}
 	else{
-		search.className = "hide";
-		backtotop.className = "hide";	
-		menu.className = "hide";
-		searchbutton.className = "hide";	
+		hideclass();
 	}
 }
 function tomenuBottom()
 {
 	window.scrollTo(0, document.body.scrollHeight);
 
-	media = window.matchMedia("(max-width: 800px)");
 	searchbutton.className = "hide";	
 	
 	if(media.matches){
@@ -39,10 +35,14 @@ function tomenuBottom()
 		search.className = "hide";
 	}
 	else{
-		search.className = "hide";
-		backtotop.className = "hide";	
-		menu.className = "hide";	
+		hideclass();
 	}
+}
+function hideclass(){
+	search.className = "hide";
+	backtotop.className = "hide";	
+	menu.className = "hide";
+	searchbutton.className = "hide";
 }
 
 // $(window).resize(function() {
